@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'serif', cursive;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #FCFCFC;
+}
+
+header, footer {
+    background-color:  #00A08C;
+    color: #FCFCFC;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Agrega estos estilos en tu archivo styles.css */
+.carrito {
+    position: relative;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el carrito */
+}
+
+.carrito-lista {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none; /* Oculta la lista de compras por defecto */
+}
+
+.carrito:hover .carrito-lista {
+    display: block; /* Muestra la lista de compras al pasar el mouse sobre el carrito */
+}
+
+.carrito img {
+    width: 20px;
+    height: auto;
+}
+
+/* Estilos adicionales para la lista de compras */
+.carrito-lista div {
+    margin-bottom: 5px;
+}
+
+
+h1, h2 {
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #8A08FF;
+    color: #FCFCFC;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #2C2C2C;
+}
+
+button {
+    background-color:  #00A08C;
+    border: none;
+    color: #FCFCFC;
+    padding: 10px;
+}
+
+td img {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+header {
+    background-color: #00A08C;
+    color: #FCFCFC;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .opciones {
+    display: flex;
+}
+
+header .opcion {
+    margin-left: 20px;
+}
+
+header .opcion a {
+    color: #FCFCFC;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .opcion a:hover {
+    color: #BF9E5F;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galleta {
+    background-color: #FCFCFC;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleta img {
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.galleta h3 {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.galleta p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.galleta button {
+    background-color: gray;
+    border: none;
+    color: #FCFCFC;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.galleta button:hover {
+    background-color: #BF9E5F;
+}
+
+.conocer-mas {
+    background-color: #2C2C2C;
+    padding: 50px;
+}
+
+.conocer-mas h2 {
+    text-align
+    : center;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .conocer-mas .opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .conocer-mas .opcion {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login {
+    /* crear caja blanca para el form */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+
+    /* para agrandar la caja  */
+    padding: 20px 25px;
+
+    /* para darle sombra a la caja */
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+form .title{
+    color:#252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+form label{
+    margin-bottom: 35px;
+}
+
+
+form label input{
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #000;
+    padding: 0px 20px;
+    font-size:20px;
+}
+
+form label input::placeholder{
+    color: rgba(35, 35, 35, 0.5);
+    text-align: center;
+}
+
+form .link{
+    color: #252525;
+    margin-bottom: 25px;
+}
+
+form button{
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right,gray, black);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+
+
+}
+td {
+    font-size: 18px;
+}
+span {
+    color:#05FB6A;
+    text-align: center;
+}
+    .haambree {
+        color:black;
+        text-align: center;
+    }
+    .jeje {
+        background:#FA0404;
+        border:collapse;
+    }
+    h2 {
+        text-align:center;
+    }
+    .ay {
+        color:#FFF700;
+    }
+    .que {
+        color:#10FBD8;
+    }
+    #login {
+        background-color: black;
+        color: #FCFCFC;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 300px;
+      }
+      
+      #login label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      #login input[type="text"], #login input[type="password"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      
+      #login button[type="submit"] {
+        background-color: #BF9E5F;
+        border: none;
+        color: #FCFCFC;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease;
+      }
+      
+      #login button[type="submit"]:hover {
+        background-color: #D2386C;
+      }
