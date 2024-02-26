@@ -22,7 +22,7 @@ main {
     margin: 0 auto;
 }
 
-/* Agrega estos estilos en tu archivo styles.css */
+/* me sugirieron agregar estos estilos en mi css */
 .carrito {
     position: relative;
     cursor: pointer; /* Cambia el cursor al pasar sobre el carrito */
@@ -39,7 +39,7 @@ main {
 }
 
 .carrito:hover .carrito-lista {
-    display: block; /* Muestra la lista de compras al pasar el mouse sobre el carrito */
+    display: block; 
 }
 
 .carrito img {
@@ -47,7 +47,6 @@ main {
     height: auto;
 }
 
-/* Estilos adicionales para la lista de compras */
 .carrito-lista div {
     margin-bottom: 5px;
 }
