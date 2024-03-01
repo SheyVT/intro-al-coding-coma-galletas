@@ -9,7 +9,7 @@ function agregarAlCarrito(producto, precio) {
 }
 
 
-function toggleCarrito() {
+function omCarrito() {
     let carritoElemento = document.getElementById('carritoProductos');
     if (carritoElemento.style.display === "none") {
         carritoElemento.style.display = "block";
@@ -18,7 +18,6 @@ function toggleCarrito() {
         carritoElemento.style.display = "none";
     }
 }
-
 function actualizarCarrito() {
     let carritoElemento = document.getElementById('carritoProductos');
     carritoElemento.innerHTML = ''; // Borra el contenido actual antes de actualizar 👍
